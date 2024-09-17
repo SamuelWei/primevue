@@ -39,7 +39,7 @@ export default {
             default: true
         },
         paginatorTemplate: {
-            type: String,
+            type: [Object, String],
             default: 'FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown'
         },
         pageLinkSize: {
