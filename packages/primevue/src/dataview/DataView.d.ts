@@ -183,7 +183,7 @@ export interface DataViewProps {
      */
     alwaysShowPaginator?: boolean | undefined;
     /**
-     * Template of the paginator. It can be customized using the template property using the predefined keys,
+     * Template of the paginator, can either be a string or an object with key-value pairs to define templates per breakpoint. Available templates are the following;
      *
      * - FirstPageLink
      * - PrevPageLink
@@ -194,10 +194,8 @@ export interface DataViewProps {
      * - JumpToPageDropdown
      * - JumpToPageInput
      * - CurrentPageReport
-     *
-     * @defaultValue FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown
      */
-    paginatorTemplate?: string | undefined;
+    paginatorTemplate?: any | string;
     /**
      * Number of page links to display.
      * @defaultValue 5
